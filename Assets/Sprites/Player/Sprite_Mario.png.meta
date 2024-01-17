@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MarioIdle
+      name: MarioIdle1
       rect:
         serializedVersion: 2
         x: 3
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_5
+      name: MarioJump1
       rect:
         serializedVersion: 2
         x: 88
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_6
+      name: MarioFall1
       rect:
         serializedVersion: 2
         x: 107
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_7
+      name: MarioFall2
       rect:
         serializedVersion: 2
         x: 125
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_8
+      name: MarioJump2
       rect:
         serializedVersion: 2
         x: 144
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_9
+      name: MarioJump3
       rect:
         serializedVersion: 2
         x: 167
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_10
+      name: MarioThrow1
       rect:
         serializedVersion: 2
         x: 185
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_11
+      name: MarioDuck1
       rect:
         serializedVersion: 2
         x: 204
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_12
+      name: MarioDuck2
       rect:
         serializedVersion: 2
         x: 221
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_13
+      name: MarioHit1
       rect:
         serializedVersion: 2
         x: 241
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_14
+      name: MarioFail1
       rect:
         serializedVersion: 2
         x: 269
@@ -438,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_15
+      name: MarioBack1
       rect:
         serializedVersion: 2
         x: 286
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_16
+      name: MarioVictory1
       rect:
         serializedVersion: 2
         x: 306
@@ -480,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_17
+      name: MarioFly1
       rect:
         serializedVersion: 2
         x: 326
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_18
+      name: MarioFly2
       rect:
         serializedVersion: 2
         x: 346
@@ -522,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_19
+      name: MarioFly3
       rect:
         serializedVersion: 2
         x: 366
@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_20
+      name: MarioFly4
       rect:
         serializedVersion: 2
         x: 388
@@ -564,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_21
+      name: MarioAwe1
       rect:
         serializedVersion: 2
         x: 411
@@ -585,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_22
+      name: MarioPoint1
       rect:
         serializedVersion: 2
         x: 428
@@ -606,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_23
+      name: MarioIdle2
       rect:
         serializedVersion: 2
         x: 446
@@ -627,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_24
+      name: MarioBalloon1
       rect:
         serializedVersion: 2
         x: 0
@@ -648,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_25
+      name: MarioBalloon2
       rect:
         serializedVersion: 2
         x: 26
@@ -669,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_26
+      name: MarioBalloon3
       rect:
         serializedVersion: 2
         x: 57
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_27
+      name: MarioBalloon4
       rect:
         serializedVersion: 2
         x: 93
@@ -711,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_28
+      name: MarioSlide1
       rect:
         serializedVersion: 2
         x: 124
@@ -732,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_29
+      name: MarioSlide2
       rect:
         serializedVersion: 2
         x: 148
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_30
+      name: MarioSlide3
       rect:
         serializedVersion: 2
         x: 170
@@ -774,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_31
+      name: MarioSlide4
       rect:
         serializedVersion: 2
         x: 195
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_32
+      name: MarioSlide5
       rect:
         serializedVersion: 2
         x: 218
@@ -816,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_33
+      name: MarioSlide6
       rect:
         serializedVersion: 2
         x: 240
@@ -837,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_34
+      name: MarioDance1
       rect:
         serializedVersion: 2
         x: 262
@@ -858,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_35
+      name: MarioDance2
       rect:
         serializedVersion: 2
         x: 279
@@ -879,7 +879,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_36
+      name: MarioDance3
       rect:
         serializedVersion: 2
         x: 303
@@ -900,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_37
+      name: MarioDance4
       rect:
         serializedVersion: 2
         x: 320
@@ -921,7 +921,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_38
+      name: MarioDance5
       rect:
         serializedVersion: 2
         x: 345
@@ -942,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_39
+      name: MarioDance6
       rect:
         serializedVersion: 2
         x: 364
@@ -963,7 +963,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_40
+      name: MarioDance7
       rect:
         serializedVersion: 2
         x: 388
@@ -984,7 +984,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_41
+      name: MarioDance8
       rect:
         serializedVersion: 2
         x: 408
@@ -1005,7 +1005,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_42
+      name: MarioDance9
       rect:
         serializedVersion: 2
         x: 428
@@ -1026,7 +1026,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_43
+      name: MarioDance10
       rect:
         serializedVersion: 2
         x: 453
@@ -1047,7 +1047,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_44
+      name: MarioPickup1
       rect:
         serializedVersion: 2
         x: 1
@@ -1068,7 +1068,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_45
+      name: MarioPickup2
       rect:
         serializedVersion: 2
         x: 23
@@ -1089,7 +1089,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_46
+      name: MarioPickup3
       rect:
         serializedVersion: 2
         x: 41
@@ -1110,7 +1110,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_47
+      name: MarioThrow2
       rect:
         serializedVersion: 2
         x: 61
@@ -1131,7 +1131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_48
+      name: MarioThrow3
       rect:
         serializedVersion: 2
         x: 79
@@ -1152,7 +1152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_49
+      name: MarioThrow4
       rect:
         serializedVersion: 2
         x: 97
@@ -1173,7 +1173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_50
+      name: MarioThrow5
       rect:
         serializedVersion: 2
         x: 122
@@ -1194,7 +1194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_51
+      name: MarioBurned1
       rect:
         serializedVersion: 2
         x: 143
@@ -1215,7 +1215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_52
+      name: MarioBurned2
       rect:
         serializedVersion: 2
         x: 164
@@ -1236,7 +1236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_53
+      name: MarioPara1
       rect:
         serializedVersion: 2
         x: 185
@@ -1257,7 +1257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_54
+      name: MarioPara2
       rect:
         serializedVersion: 2
         x: 218
@@ -1278,7 +1278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_55
+      name: MarioPara3
       rect:
         serializedVersion: 2
         x: 253
@@ -1299,7 +1299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_56
+      name: MarioPara4
       rect:
         serializedVersion: 2
         x: 286
@@ -1320,7 +1320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_57
+      name: MarioPara5
       rect:
         serializedVersion: 2
         x: 315
@@ -1341,7 +1341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_58
+      name: MarioPara6
       rect:
         serializedVersion: 2
         x: 345
@@ -1362,7 +1362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_59
+      name: MarioPole1
       rect:
         serializedVersion: 2
         x: 365
@@ -1383,7 +1383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Mario_60
+      name: MarioPole2
       rect:
         serializedVersion: 2
         x: 389
@@ -1414,67 +1414,67 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MarioIdle: -305481891
+      MarioAwe1: 1973986688
+      MarioBack1: 1543723149
+      MarioBalloon1: -1595842888
+      MarioBalloon2: 1230832985
+      MarioBalloon3: -1497077095
+      MarioBalloon4: -103296936
+      MarioBurned1: 16636507
+      MarioBurned2: 88905755
+      MarioDance1: 1917452618
+      MarioDance10: 1326331698
+      MarioDance2: -811646659
+      MarioDance3: 1422369528
+      MarioDance4: 501386424
+      MarioDance5: 1402359268
+      MarioDance6: 2100553064
+      MarioDance7: 674765462
+      MarioDance8: 1047763435
+      MarioDance9: 1603530566
+      MarioDuck1: 696504928
+      MarioDuck2: 342972531
+      MarioFail1: 2080041290
+      MarioFall1: 1598004158
+      MarioFall2: 904104299
+      MarioFly1: -1196171186
+      MarioFly2: -2125806242
+      MarioFly3: 1688559563
+      MarioFly4: -1379785937
+      MarioHit1: -1611645750
+      MarioIdle1: -305481891
+      MarioIdle2: -578433258
+      MarioJump1: -83193853
+      MarioJump2: -1598076357
+      MarioJump3: -552440547
+      MarioPara1: -581970759
+      MarioPara2: -550404610
+      MarioPara3: 126474159
+      MarioPara4: -58193688
+      MarioPara5: -1502389984
+      MarioPara6: 1484586996
+      MarioPickup1: 545156831
+      MarioPickup2: -978689894
+      MarioPickup3: 16077613
+      MarioPoint1: -886373244
+      MarioPole1: 1521483814
+      MarioPole2: -929564543
+      MarioSlide1: 474043643
+      MarioSlide2: -417679464
+      MarioSlide3: -986385477
+      MarioSlide4: -971754088
+      MarioSlide5: -1967911305
+      MarioSlide6: -2118676410
+      MarioThrow1: 1084953519
+      MarioThrow2: 180899511
+      MarioThrow3: -991298956
+      MarioThrow4: -257082749
+      MarioThrow5: 717246908
+      MarioVictory1: 1191581531
       MarioWalk1: -815500441
       MarioWalk2: -2118083597
       MarioWalk3: -714311098
       MarioWalk4: -1022949911
-      Sprite_Mario_10: 1084953519
-      Sprite_Mario_11: 696504928
-      Sprite_Mario_12: 342972531
-      Sprite_Mario_13: -1611645750
-      Sprite_Mario_14: 2080041290
-      Sprite_Mario_15: 1543723149
-      Sprite_Mario_16: 1191581531
-      Sprite_Mario_17: -1196171186
-      Sprite_Mario_18: -2125806242
-      Sprite_Mario_19: 1688559563
-      Sprite_Mario_20: -1379785937
-      Sprite_Mario_21: 1973986688
-      Sprite_Mario_22: -886373244
-      Sprite_Mario_23: -578433258
-      Sprite_Mario_24: -1595842888
-      Sprite_Mario_25: 1230832985
-      Sprite_Mario_26: -1497077095
-      Sprite_Mario_27: -103296936
-      Sprite_Mario_28: 474043643
-      Sprite_Mario_29: -417679464
-      Sprite_Mario_30: -986385477
-      Sprite_Mario_31: -971754088
-      Sprite_Mario_32: -1967911305
-      Sprite_Mario_33: -2118676410
-      Sprite_Mario_34: 1917452618
-      Sprite_Mario_35: -811646659
-      Sprite_Mario_36: 1422369528
-      Sprite_Mario_37: 501386424
-      Sprite_Mario_38: 1402359268
-      Sprite_Mario_39: 2100553064
-      Sprite_Mario_40: 674765462
-      Sprite_Mario_41: 1047763435
-      Sprite_Mario_42: 1603530566
-      Sprite_Mario_43: 1326331698
-      Sprite_Mario_44: 545156831
-      Sprite_Mario_45: -978689894
-      Sprite_Mario_46: 16077613
-      Sprite_Mario_47: 180899511
-      Sprite_Mario_48: -991298956
-      Sprite_Mario_49: -257082749
-      Sprite_Mario_5: -83193853
-      Sprite_Mario_50: 717246908
-      Sprite_Mario_51: 16636507
-      Sprite_Mario_52: 88905755
-      Sprite_Mario_53: -581970759
-      Sprite_Mario_54: -550404610
-      Sprite_Mario_55: 126474159
-      Sprite_Mario_56: -58193688
-      Sprite_Mario_57: -1502389984
-      Sprite_Mario_58: 1484586996
-      Sprite_Mario_59: 1521483814
-      Sprite_Mario_6: 1598004158
-      Sprite_Mario_60: -929564543
-      Sprite_Mario_7: 904104299
-      Sprite_Mario_8: -1598076357
-      Sprite_Mario_9: -552440547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
