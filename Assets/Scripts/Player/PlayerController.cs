@@ -84,13 +84,12 @@ public class PlayerController : MonoBehaviour
         // Determine if player is grounded
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, GroundLayer);
 
-        // X axis input
+        // Move input
         float xInput = Input.GetAxisRaw("Horizontal");
-
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
         if (xInput != 0) sr.flipX = xInput == -1;
 
-        // Y axis input
+        // Jump input
         // Use GetButtonDown instead of y axis input to ensure the jumpforce is applied correctly,
         // otherwise it will be applied multiple times
         if (Input.GetButtonDown("Jump") && isGrounded) rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -99,5 +98,6 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("xInput", Mathf.Abs(xInput));
         anim.SetFloat("yInput", rb.velocity.y);
         anim.SetBool("isGrounded", isGrounded);
+        if (Input.GetButtonDown("Throw")) anim.SetTrigger("throwTrigger");
     }
 }
