@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
@@ -14,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     // Use SerializeField provided by Unity instead of using public field
     // Also default speed
-    // TODO: ZA - understand what this is
+    // TODO: ZA - understand what [SerializeField actually does] is
     [SerializeField] float speed = 7.0f;
     [SerializeField] float jumpForce = 7.0f;
 
@@ -79,10 +77,19 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
+    // 
+    // Changes are applied in the PhysicsUpdate cycle. Is this cycle separate from the Update cycle? Is it concurrent?
     void Update()
     {
         // Determine if player is grounded
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, GroundLayer);
+
+        // Reset gravity if player is grounded
+        if (isGrounded)
+        {
+            rb.gravityScale = 1;
+            anim.ResetTrigger("jumpAttackTrigger"); // Also reset trigger to reset unity buffered active trigger
+        }
 
         // Move input
         float xInput = Input.GetAxisRaw("Horizontal");
@@ -92,12 +99,86 @@ public class PlayerController : MonoBehaviour
         // Jump input
         // Use GetButtonDown instead of y axis input to ensure the jumpforce is applied correctly,
         // otherwise it will be applied multiple times
-        if (Input.GetButtonDown("Jump") && isGrounded) rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        // JumpAttack Input
+        if (Input.GetButtonDown("Jump") && !isGrounded)
+        {
+            anim.SetTrigger("jumpAttackTrigger");
+        }
+
+        // GetCurrentAnimatorClipInfo returns array of all animation clips in a specific animation layer
+        // The first element of the array is the currently playing animation clip
+        //
+        // Note: Animation layer is not the same as game object layer (animation layers more useful for 3D animations)
+        AnimatorClipInfo[] clipInfos = anim.GetCurrentAnimatorClipInfo(0);
+        AnimatorClipInfo currentClip = clipInfos[0];
+
+        // Throw input
+        //
+        // Force player to be still on the x-axis when throwing
+        if (currentClip.clip.name == "Throw")
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+        else if (Input.GetButtonDown("Throw"))
+        {
+            anim.SetTrigger("throwTrigger");
+        }
 
         // Animation
         anim.SetFloat("xInput", Mathf.Abs(xInput));
         anim.SetFloat("yInput", rb.velocity.y);
         anim.SetBool("isGrounded", isGrounded);
-        if (Input.GetButtonDown("Throw")) anim.SetTrigger("throwTrigger");
+    }
+
+    // Public methods can be called by unity events - e.g. animation event
+    //
+    // Note: Need to also reset trigger as unity will queue the trigger event and the trigger
+    // will remain active unless manually reset
+    public void increaseGravity()
+    {
+        rb.gravityScale = 5;
+    }
+
+    // Collider events
+    // Different physics bodies will trigger different events depending on what they are colliding with.
+
+    // Trigger events are called most times but still generally require one physics body
+    // Called on the frame entered on trigger
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
+    // Called on the frame 2 onwards while in trigger
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        
+    }
+
+    // Called on the frame exited on trigger exit
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
+    }
+
+    // Collision events are only called when one of the two objects colliding is a dynamic rigidbody
+    // Called on the frame entered on collision
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+    }
+
+    // Called on the frame 2 onwards while in collision
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+    }
+
+    // Called on the frame exited on collision exited
+    private void OnCollisionExit2D(Collision2D collision)
+    {
     }
 }

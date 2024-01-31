@@ -1404,7 +1404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_61
+      name: PlayerProjectile1
       rect:
         serializedVersion: 2
         x: 283
@@ -1425,7 +1425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_62
+      name: PlayerProjectile2
       rect:
         serializedVersion: 2
         x: 292
@@ -14537,7 +14537,7 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14571,6 +14571,8 @@ TextureImporter:
       GoombaDeath2: -1325641097
       GoombaWalk1: 1679316339
       GoombaWalk2: -1137875658
+      PlayerProjectile1: -2020539372
+      PlayerProjectile2: -1007994715
       SkeletonDeath1: 475410827
       SkeletonDeath2: 1211090133
       SkeletonIdle: 337086825
@@ -15122,7 +15124,6 @@ TextureImporter:
       Sprite_Enemies_607: -1417279600
       Sprite_Enemies_608: -17022085
       Sprite_Enemies_609: -785754608
-      Sprite_Enemies_61: -2020539372
       Sprite_Enemies_610: 1038429316
       Sprite_Enemies_611: -1170550020
       Sprite_Enemies_612: 1008868706
@@ -15133,7 +15134,6 @@ TextureImporter:
       Sprite_Enemies_617: -882854020
       Sprite_Enemies_618: 1513325288
       Sprite_Enemies_619: 1024460596
-      Sprite_Enemies_62: -1007994715
       Sprite_Enemies_620: 1155372221
       Sprite_Enemies_621: 994994919
       Sprite_Enemies_622: 1055032977
