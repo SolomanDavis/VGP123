@@ -143,6 +143,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: YoshiCoin
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 134
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb918efe07627f443a83b77fae7b5d84
+      internalID: -914691533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerupGreen
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 84
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244b5548f3f7e214b8d4a474f316d9b9
+      internalID: -1418239971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerupRed
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 116
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192d7da8073127f4993169d96baca35c
+      internalID: -990620122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerupBlue
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53499a623a8ba3c4fa3a51f39688bb1f
+      internalID: 738285800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 103
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbea6d9d8ea5ce94f94359bf5e6a2384
+      internalID: 268398145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -154,7 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Key: 268398145
       Level: 1703812999
+      PowerupBlue: 738285800
+      PowerupGreen: -1418239971
+      PowerupRed: -990620122
+      YoshiCoin: -914691533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

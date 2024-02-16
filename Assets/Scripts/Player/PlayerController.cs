@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
@@ -21,6 +22,81 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform GroundCheck; // GroundCheck is a transform attached to the player used to check if the player is on the ground
     [SerializeField] LayerMask GroundLayer; // LayerMask holds the layer we will want to check within
     [SerializeField] float groundCheckRadius = 0.2f; // Radius of the circle used to check if the player is on the ground
+
+    // Lives and score
+    [SerializeField] int maxLives = 5;
+
+    private int _lives;
+    public int lives
+    {
+        get => _lives;
+        set
+        {
+            if (value > maxLives)
+            {
+                value = 5;
+            }
+            else if (value < 0)
+            {
+                value = 0;
+            }
+            else
+            {
+                _lives = value;
+            }
+
+            Debug.Log("ZA - Lives: " + _lives);
+        }
+    }
+
+    private int _score;
+    public int score
+    {
+        get => _score;
+        set
+        {
+            // Input validation (can score decrease? etc.)
+            _score = value;
+            Debug.Log("ZA - Score: " + _score);
+        }
+    }
+
+    // Coroutine
+    Coroutine jumpForceChange = null;
+
+    public void StartJumpForceChange()
+    {
+        // Doing this means that hitting a powerup near the end of the jump force change time span will not stack
+        // But we can't just remove as we'll just be starting many coroutines.
+        // Instead we should increase the timespan of the coroutine instead.
+        if (jumpForceChange == null)
+        {
+            jumpForceChange = StartCoroutine(JumpForceChange());
+            return;
+        }
+
+        // Stop existing coroutine and start a new one
+        StopCoroutine(jumpForceChange);
+
+        // Need to run cleanup code of coroutine - there should be a way to abstract this somehow
+        jumpForceChange = null;
+        jumpForce /= 2;
+
+        jumpForceChange = StartCoroutine(JumpForceChange());
+    }
+
+    IEnumerator JumpForceChange()
+    {
+        jumpForce *= 2.0f;
+
+        // Suspend coroutine
+        yield return new WaitForSeconds(5.0f);
+
+        jumpForce /= 2.0f;
+
+        // Ensure only run once per coroutine
+        jumpForceChange = null;
+    }
 
     // Start is called before the first frame update
     void Start()
