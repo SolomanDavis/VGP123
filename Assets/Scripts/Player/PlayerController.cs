@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
                 _lives = value;
             }
 
-            Debug.Log("ZA - Lives: " + _lives);
+            Debug.Log("ZA - lives: " + _lives);
         }
     }
 
@@ -150,6 +150,11 @@ public class PlayerController : MonoBehaviour
             GroundLayer = LayerMask.GetMask("Ground");
             if (debug) Debug.Log("[" + gameObject.name + "] GroundLayer not set, default to Ground layer");
         }
+
+        if (lives == 0)
+        {
+            lives = maxLives;
+        }
     }
 
     // Update is called once per frame
@@ -227,7 +232,13 @@ public class PlayerController : MonoBehaviour
     // Called on the frame entered on trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Squish"))
+        {
+            collision.transform.parent.gameObject.GetComponent<Enemy>().TakeDamage(999);
+
+            rb.velocity = Vector2.zero;
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
     }
 
     // Called on the frame 2 onwards while in trigger

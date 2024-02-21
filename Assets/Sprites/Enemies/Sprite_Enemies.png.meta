@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -3126,7 +3126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonIdle
+      name: SkeletonIdle1
       rect:
         serializedVersion: 2
         x: 201
@@ -3147,7 +3147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonWalk1
+      name: SkeletonIdle2
       rect:
         serializedVersion: 2
         x: 282
@@ -3168,7 +3168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonWalk2
+      name: SkeletonWalk1
       rect:
         serializedVersion: 2
         x: 310
@@ -3189,7 +3189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonWalk3
+      name: SkeletonWalk2
       rect:
         serializedVersion: 2
         x: 336
@@ -7053,7 +7053,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_334
+      name: WitchIdle
       rect:
         serializedVersion: 2
         x: 800
@@ -7074,7 +7074,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_335
+      name: WitchThrow1
       rect:
         serializedVersion: 2
         x: 823
@@ -7095,7 +7095,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_336
+      name: WitchThrow2
       rect:
         serializedVersion: 2
         x: 852
@@ -7116,7 +7116,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_337
+      name: WitchThrow3
       rect:
         serializedVersion: 2
         x: 881
@@ -14575,10 +14575,10 @@ TextureImporter:
       PlayerProjectile2: -1007994715
       SkeletonDeath1: 475410827
       SkeletonDeath2: 1211090133
-      SkeletonIdle: 337086825
-      SkeletonWalk1: -87230343
-      SkeletonWalk2: 456703443
-      SkeletonWalk3: -1984211124
+      SkeletonIdle1: 1211090133
+      SkeletonIdle2: -87230343
+      SkeletonWalk1: 456703443
+      SkeletonWalk2: -1984211124
       Sprite_Enemies_0: -1516510660
       Sprite_Enemies_10: -1948228447
       Sprite_Enemies_100: 1951469888
@@ -14820,10 +14820,6 @@ TextureImporter:
       Sprite_Enemies_331: 905902115
       Sprite_Enemies_332: 1759199724
       Sprite_Enemies_333: 1964089442
-      Sprite_Enemies_334: 1990897227
-      Sprite_Enemies_335: 528510068
-      Sprite_Enemies_336: 160009707
-      Sprite_Enemies_337: 339202843
       Sprite_Enemies_338: -1028994567
       Sprite_Enemies_339: 1263253228
       Sprite_Enemies_34: 819898970
@@ -15238,6 +15234,7 @@ TextureImporter:
       TurretAttack2: -1568225289
       TurretAttack3: -1659822850
       TurretIdle: 1520556646
+      WitchIdle: 1990897227
       WitchProjectile1: 932120724
       WitchProjectile10: -1838125797
       WitchProjectile11: -467542011
@@ -15251,6 +15248,9 @@ TextureImporter:
       WitchProjectile7: 1000063950
       WitchProjectile8: 371904564
       WitchProjectile9: -1631115070
+      WitchThrow1: 528510068
+      WitchThrow2: 160009707
+      WitchThrow3: 339202843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

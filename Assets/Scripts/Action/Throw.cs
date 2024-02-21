@@ -10,6 +10,8 @@ public class Throw : MonoBehaviour
     public Transform spawnPointLeft;
     public Projectile projectilePreFab;
 
+    [SerializeField] bool isEnemy = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +28,13 @@ public class Throw : MonoBehaviour
         {
             Projectile currentProjectile = Instantiate(projectilePreFab, spawnPointRight.position, spawnPointRight.rotation);
             currentProjectile.initialVelocity = initialVelocity;
+            currentProjectile.tag = isEnemy ? "EnemyProjectile" : "PlayerProjectile";
         }
         else
         {
             Projectile currentProjectile = Instantiate(projectilePreFab, spawnPointLeft.position, spawnPointLeft.rotation);
             currentProjectile.initialVelocity = new Vector2(-initialVelocity.x, initialVelocity.y);
+            currentProjectile.tag = isEnemy ? "EnemyProjectile" : "PlayerProjectile";
         }
     }
 }

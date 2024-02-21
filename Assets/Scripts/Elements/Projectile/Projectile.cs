@@ -65,8 +65,6 @@ public class Projectile : MonoBehaviour
         // Get incoming collider
         GameObject incoming = collision.gameObject;
 
-        Debug.Log("ZA - [Projectile::OnCollisionEnter2D] " + this.name + " collided with " + incoming.name);
-
         switch (incoming.tag)
         {
             case "Ground":
@@ -77,7 +75,6 @@ public class Projectile : MonoBehaviour
                 // If collision occurs horizontally freeze the projectile and destroy it
                 if (contact.normal.Abs().x >= contact.normal.Abs().y)
                 {
-                    Debug.Log("ZA - [Projectile::OnCollisionEnter2D] collided horizontally, destroying projectile");
                     rb.velocity = Vector2.zero;
                     rb.gravityScale = 0;
                     anim.SetTrigger("destroyTrigger");
@@ -86,7 +83,30 @@ public class Projectile : MonoBehaviour
                 break;
 
             case "Coin":
-                Debug.Log("ZA - [Projectile::OnCollisionEnter2D] collided with coin, destroying projectile");
+                rb.velocity = Vector2.zero;
+                rb.gravityScale = 0;
+                anim.SetTrigger("destroyTrigger");
+                break;
+
+            case "Enemy":
+                if (this.tag == "EnemyProjectile")
+                {
+                    Destroy(this.gameObject);
+                }
+
+                collision.gameObject.GetComponent<Enemy>().TakeDamage(1);
+                rb.velocity = Vector2.zero;
+                rb.gravityScale = 0;
+                anim.SetTrigger("destroyTrigger");
+                break;
+
+            case "Player":
+                if (this.tag == "PlayerProjectile")
+                {
+                    Destroy(this.gameObject);
+                }
+
+                collision.gameObject.GetComponent<PlayerController>().lives--;
                 rb.velocity = Vector2.zero;
                 rb.gravityScale = 0;
                 anim.SetTrigger("destroyTrigger");

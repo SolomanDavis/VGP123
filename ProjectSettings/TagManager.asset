@@ -8,6 +8,11 @@ TagManager:
   - Coin
   - Ground
   - ItemSpawnPoint
+  - Skeleton1Bound
+  - Enemy
+  - Squish
+  - PlayerProjectile
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
